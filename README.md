@@ -10,7 +10,7 @@
 
 ## 适用场景 / Use case
 
-你在跑一个 [newapi](https://github.com/songquanpeng/one-api) 实例，卖 token 给你自己的客户，想：
+你在跑一个 [newapi](https://github.com/blackxl/api-ops) 实例，卖 token 给你自己的客户，想：
 
 - ✅ 每天看每个客户的消耗、付款、成本、毛利
 - ✅ 跟上游供应商月度对账（算你欠每个供应商多少钱）
