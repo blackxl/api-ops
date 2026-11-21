@@ -164,13 +164,26 @@ jobs:
             -e POSTGRES_PASSWORD=ci_only_not_a_secret \
             -e POSTGRES_DB=api_ops \
             postgres:15-alpine
-          for i in $(seq 1 30); do
-            if docker exec ci-pg pg_isready -U api_ops; then
-              break
+          # Official postgres entrypoint accepts, restarts once, then accepts
+          # again. One pg_isready success can be followed by "rejecting
+          # connections". Require three successes in a row before continuing.
+          streak=0
+          for i in $(seq 1 40); do
+            if docker exec ci-pg pg_isready -U api_ops >/dev/null 2>&1; then
+              streak=$((streak + 1))
+              if [ "$streak" -ge 3 ]; then
+                break
+              fi
+            else
+              streak=0
             fi
             sleep 1
           done
-          docker exec ci-pg pg_isready -U api_ops
+          if [ "$streak" -lt 3 ]; then
+            echo "postgres did not stay ready"
+            docker logs ci-pg || true
+            exit 1
+          fi
           # Share the Postgres network namespace so 127.0.0.1 works without
           # publishing a host port. Throwaway password, not a production secret.
           docker run -d --name ci-api --network container:ci-pg \
