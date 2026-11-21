@@ -1,9 +1,9 @@
 # api-ops
 
-> 针对 [newapi](https://github.com/songquanpeng/one-api) 写的运营管理工具。  
+> 针对 [newapi](https://github.com/blackxl/api-ops) 写的运营管理工具。  
 > Dashboard 看板 / 客户对账 / 上游对账 / 利润分析 / 监控告警，**3 数据源铁律 + 5 大能力**一站式搞定。
 
-> English: see [README.en.md](./README.en.md) — Operations management tool written for [newapi](https://github.com/songquanpeng/one-api)
+> English: see [README.en.md](./README.en.md) — Operations management tool written for [newapi](https://github.com/blackxl/api-ops)
 > (dashboard, customer billing, vendor billing, profit analysis, monitoring & alerts).
 
 ---

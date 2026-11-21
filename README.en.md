@@ -1,6 +1,6 @@
 # api-ops
 
-> An operations management tool written for [newapi](https://github.com/songquanpeng/one-api).  
+> An operations management tool written for [newapi](https://github.com/blackxl/api-ops).  
 > Dashboard / customer billing / vendor billing / profit analysis / monitoring & alerts —
 > all built on the **3 data-source rule + 5 capabilities** principle.
 
