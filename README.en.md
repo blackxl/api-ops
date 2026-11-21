@@ -194,6 +194,7 @@ See [docs/DESIGN.md §Deployment rules](./docs/DESIGN.md) and `scripts/deploy-pr
 | [docs/CHANGELOG.md](./docs/CHANGELOG.md) | Change history |
 | [docs/test-reports/](./docs/test-reports/) | 17 deployment test reports (archived by commit hash) |
 | [CONTRIBUTING.md](./CONTRIBUTING.md) | Contributing guide (zh + en) |
+| [docs/BAOTA-DEPLOY.md](./docs/BAOTA-DEPLOY.md) | BaoTa panel deploy (pull only after the main Actions publish succeeds) |
 | [LICENSE](./LICENSE) | MIT |
 
 ---
