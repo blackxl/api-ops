@@ -191,6 +191,7 @@ ssh root@<your.server> 'cd /opt/api-ops && \
 | [docs/CHANGELOG.md](./docs/CHANGELOG.md) | 变更历史 |
 | [docs/test-reports/](./docs/test-reports/) | 17 份部署测试报告（按 commit hash 归档） |
 | [CONTRIBUTING.md](./CONTRIBUTING.md) | 贡献指南（中英） |
+| [docs/BAOTA-DEPLOY.md](./docs/BAOTA-DEPLOY.md) | 宝塔面板部署（镜像由 main 的 Actions 发布后才可拉取） |
 | [LICENSE](./LICENSE) | MIT |
 
 ---
